@@ -4,7 +4,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/free-mode";
 import "swiper/css/pagination";
-import { FreeMode } from "swiper";
+import { FreeMode,Pagination } from "swiper";
 import { motion } from "framer-motion";
 
 const reviewList = [
@@ -56,7 +56,7 @@ const Review = () => {
           pagination={{
             clickable: true,
           }}
-          modules={[FreeMode]}
+          modules={[FreeMode,Pagination]}
           className="mySwiper"
         >
           {reviewList.map((item, index) => (
@@ -81,8 +81,8 @@ const Review = () => {
                 <div className="card-name text-lg font-bold text-center mt-2">
                   {item.name}
                 </div>
-                <div className="card-commect p-3 text-center text-slate-600">
-                  {item.comment}
+                <div className="card-commect italic p-3 text-center text-slate-600">
+                  "{item.comment}"
                 </div>
               </motion.div>
             </SwiperSlide>

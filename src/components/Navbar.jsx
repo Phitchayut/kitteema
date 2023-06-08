@@ -40,17 +40,17 @@ const Navbar = ({ text }) => {
       <nav className="">
         <div className="logo"></div>
         <motion.div
-          className="text-[3rem] pt-5 uppercase overflow-hidden flex justify-center relative"
+          className="text-[3rem] pt-5 uppercase overflow-hidden flex justify-center relative text-purple-950"
           variants={container}
           initial="hidden"
           animate="visible"
         >
           {letters.map((letter, index) => (
-            <>
+            <div key={index}>
               <motion.span variants={child} key={index} className="">
                 {letter === " " ? "\u00A0" : letter}
               </motion.span>
-            </>
+            </div>
           ))}
         </motion.div>
         <motion.div

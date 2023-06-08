@@ -27,7 +27,7 @@ const Menu = () => {
             delay: 0.5,
             ease: [0, 0.71, 0.2, 1.01]
           }}>
-            <a href={item.linka} className="text-white bg-gradient-to-r from-violet-500 to-fuchsia-500 px-5 py-2 rounded-2xl">{item.name}</a>
+            <a href={item.linka} className="text-white bg-gradient-to-r from-violet-500 to-fuchsia-500 px-5 py-2 rounded-xl">{item.name}</a>
           </motion.li>
         ))}
       </ul>
